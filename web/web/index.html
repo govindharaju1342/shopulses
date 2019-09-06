@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1" />
+<title>Shopulses</title>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>  
+<script type="text/javascript" src="js/jquery.stellar.min.js"></script> 
+<link media="all" type="text/css" href="css/style.css" rel="stylesheet" />
+<link rel="shortcut icon" type="image/x-icon" href="16.ico" /> 
+<script type="text/javascript" src="js/document.js"></script>
+<script type="text/javascript" src="js/function.js"></script> 
+<script type="text/javascript" src="js/waypoints.js"></script> 
+</head> 
+<body>
+		<div id="preloader">
+			<div id="status">&nbsp;</div>
+		</div>
+		<div id="wrapper"> <!--wrapper start-->
+            <div id="header"><!--header start-->
+            	<div id="header_content">
+                  	<div id="header_tit"> 
+                    	<label class="header_label header_label_select" id="h_home">Home</label>
+                        <label class="header_label" id="h_what">What</label>
+                        <label class="header_label" id="h_how">How</label>
+                        <label class="header_label" id="h_download">Download</label> 
+                        <label class="header_label" id="h_team">Team</label>
+                        <label class="header_label" id="h_contact">Contact</label>
+                        <img src="css/images/ribbon.png" id="ribbon" />
+                    </div> 
+                </div>
+                <div id="header_border"></div>  
+            </div> <!--header end--> 
+            <div id="home" class="bg1"  data-stellar-background-ratio="0"> <!--Home start-->  
+                <div id="home_content" align="center"><!--Home_content End--> 
+                            <div id="home_text_pos" class="bgtext1">
+                            Smart Shopping<br />
+                            is here. <br />
+                            Get connected.<br />
+                            <input type="button" id="home_video_button"  class="h_video_butt" value="FIND IT" onclick="video()" /><br /> 
+                            </div> 
+                            
+                           <!-- <input type="button" value="DOWNLOAD APP"  class="download" />-->
+               </div><!--Home_content End-->
+           </div><!--Home End-->
+  		   <div id="what" data-stellar-background-ratio="0"> <!--What start-->
+            	<div id="what_content"> 
+               	<div id="shop" class="what_back" data-speed="10" data-stellar-vertical-offset="-55" data-stellar-background-ratio="3"></div>
+                <div id="like" class="what_back" data-speed="10"  data-stellar-vertical-offset="-55" data-stellar-background-ratio="3.7"></div>
+                <div id="share" class="what_back"  data-speed="10" data-stellar-vertical-offset="-55" data-stellar-background-ratio="4"></div>
+                <div id="donate" class="what_back"  data-speed="10" data-stellar-vertical-offset="-55" data-stellar-background-ratio="5"></div> 
+               <!--  <div id="all_img" data-speed="10" data-stellar-vertical-offset="-55" data-stellar-background-ratio="3" ></div>-->
+   	  				<div id="what_text" >
+                        <label class="what_header">
+                        	Shopulses is the <label style="color:#000">first facebook<br />
+                        	application</label> that combines affiliate<br />
+                       		marketing with social sharing.<br />
+                        </label>
+                        <div class="what_text1">
+                        	Shopulses let users earn cash backs for qualified purchases they make through our app or by sharing<br />
+                            the products they like or bought with their friends and family. Shopulses also provides powerful<br />
+                            decion making data gleaned from twitter trends and facebook timeline of the products the users are<br />
+                            searching. Users need not leave the application or visit our web site. All the information including<br />
+                            purchases and redeem history is available within the app itself. Shopulses is in private beta starting<br />
+                            with Amazon catalogue. We are quickly expanding to add other retailers and more features.
+                        </div>
+                        <div class="what_text1" style="font-style:italic; font-weight:bold;">
+                        	Browse through the sea of products and enjoy benefits of social shopping with our Facebook app!.<br />
+							Explore with ease what your friends feel and think about things that you're interested in...
+                        </div> 
+                        <div id="waypoint_for_what" style="clear:both; height:100px;"></div> <!--waypoint_div-->
+                    </div> 
+                </div>
+            </div><!--What start-->
+            <div id="how"  class="how_bg" data-stellar-background-ratio="0"><!--How start--> 
+            	 <div id="slider"> 
+                 </div>
+   	  			<div id="how_content">
+                		<h1 id="how_h1_header">
+                   			Get cash back on your purchases<br />
+							and social referrals
+                        </h1>
+                        <div id="how_sub_header" style="display:none" >
+                   	    <label class="how_sub_header" id="cir_browse_header">Browse</label>
+                            <label class="how_sub_header" id="cir_select_header" style="margin-left:200px;">Select</label> 
+                            <label class="how_sub_header" id="cir_shop_header" style="margin-left:405px;">Shop</label> 
+                            <label class="how_sub_header" id="cir_eran_header" style="margin-left:590px;display:inline-block; line-height:40px;">Earn&nbsp;/<br /> Donate</label> 
+                            <label class="how_sub_header" id="cir_share_header" style="margin-left:760px; display:inline-block;line-height:40px;">Share&nbsp;& Earn&nbsp;More</label> 
+                     	</div>
+                        <!--<input type="button" value="" id="how_video_butt" class="video_butt"  onclick="how_video()" />-->
+                        <div id="how_circle_content">
+                        	<ul class="tt-wrapper">
+                                <li class="cir cir_browse click1" id="cir1">
+                                	<div>
+                                        <span id="cir_browse_tooltip">
+                                           Launch shopulses facebook app. Select the store and type in what you are looking for. You can also enter the product id if you know it.  
+                                        </span>
+                                    </div>
+                        </li>
+                               <li class="cir cir_select click2" id="cir2">
+                                	<div>
+                                        <span id="cir_select_tooltip">
+                                          You can hover over each of the item in the search result and the hover bar will show you related tweets and fb posts from your friends for the product. Select More if you want to see the details of the product
+                                        </span>
+                                    </div>
+                </li>
+                                <li class="cir cir_shop click3" id="cir3">
+                                	<div>
+                                        <span id="cir_shop_tooltip">
+                                            These are shopulse actions. Each of these actions might provide you cashbacks upto the amount shown in the hover bar. A buy action will take you to the retailer's checkout page
+                                        </span>
+                                    </div>
+                </li>
+                                <li class="cir cir_eran click4" id="cir4">
+                                	<div>
+                                        <span id="cir_eran_tooltip">
+                                          Click on the money bag icon to see the history of the credits. You can either get the cashback from shopulses once you meet the mimimum accrual of $10 or donate directly to a non-profit of your choice
+                                        </span>
+                                    </div>
+                </li>
+                                <li class="cir cir_share click5" id="cir5">
+                                	<div>
+                                        <span id="cir_share_tooltip">
+                                           You love a product and would like to share that with your friends and family. Select share from the hover. If the product you shared is purchased by the person you shared with, you will also get a percentage of the cashback
+                                        </span>
+                                    </div>
+                                </li>
+                             </ul> 
+                        </div>
+                        <div id="how_circle_button">
+                        	<table>
+                            	<tr>
+                                	<td><input type="button" class="circle_button click1"  value="BROWSE" style="margin: 10px 0 0 10px" /></td>
+                                    <td><input type="button" class="circle_button click2"  value="SELECT" style="margin: 10px 0 0 70px" /></td>
+                                    <td><input type="button" class="circle_button click3"  value="SHOP" style="margin: 10px 0 0 60px" /></td>
+                                    <td><input type="button" class="circle_button click4"  value="EARN / DONATE" style="margin: 10px 0 0 70px" /></td>
+                                    <td><input type="button" class="circle_button click5"  value="SHARE & EARN MORE" style="margin: 10px 0 0 70px"  /></td> 
+                                 </tr>
+                            </table>  
+                        </div>
+                        <div id="waypoint_for_how"></div> <!--waypoint_div-->
+        		</div>  
+            </div> <!--How End-->
+              <div data-stellar-background-ratio="0" id="download"> <!--download start-->
+             		<div id="download_content">
+                    	<div id="download_text1">
+                        	You can interact<br />
+                            with our social<br />
+                            commerce platform<br />
+                            in multiple ways.<br />
+                            <img src="css/images/download_page_bag.png" style="margin:30px 0 30px 110px;" />
+                            <div id="download_link">
+                            	Pick the one that is right for you.<br /> 
+                                Let us know what you feel. <br />
+                                <a href="mailto:admin@shopulses.com">(mailto: admin@shopulses.com)</a><br />   
+                            </div>
+                        </div>
+                        <div id="download_text2">
+                        	<div class="download_option" style="margin-bottom:5px;">
+                            	<div style="float:left; width:100px;">
+                            	<img src="css/images/Greasemonkey.png" width="60" height="60" style="float:left; margin:15px 0 0 20px;" />
+                                </div>
+                                <div style="float:left;color:#666; margin-top:10px; font-size:14px; width:300px;">
+                                	<label style="color:#994D00;font-size:20px;font-weight:bold;">Greasemonkey</label>  <br />
+                                   Need to install Greasemonkey<br />
+									 plugin<br />
+                                    <input type="button" id="monkey_app" class="app_download" value="Download" />
+                                </div>
+                            </div>
+                        	<div class="download_option">
+                            	<div style="float:left; width:100px;">
+                            	<img src="css/images/facebookapp_logo.png" style="float:left; margin:15px 0 0 20px;" />
+                                </div>
+                                <div style="float:left;color:#666; margin-top:10px; font-size:14px; width:300px;">
+                                	<label style="color:#085c8f;font-size:20px;font-weight:bold;">Facebook App</label>  <br />
+                                    Buy, Share and earn through the Shopulses<br />
+									App on facebook<br />
+                                    <input type="button" id="face_app" class="app_download" value="Download" />
+                                </div>
+                            </div>
+                            <div class="download_option_firefox"> 
+                                <div style="float:left; width:100px;">
+                            	<img src="css/images/pinterest.png" style="float:left; margin:15px 0 0 20px;" />
+                                </div>
+                                <div style="float:left;color:#666; margin-top:10px; font-size:14px; width:300px;">
+                                	<label style="color:#cb2027;font-size:20px;font-weight:bold;">Pinterest plugin for Firefox</label>  <br />
+                                   Don't just pin your interests. Share and <br />
+								    buy them through Shopulses<br />
+                                    <label style="color:#000; font-weight:600; font-size:12px; margin-left:110px; margin-bottom:-10px;">Coming soon for<br />&nbsp;&nbsp;&nbsp;other browsers</label>
+                                    <input type="button" id="userscripts1" class="app_download" value="Download" style="float:left;margin-top:-10px" />
+                                </div>   
+                            </div>
+                            <div class="download_option_firefox"> 
+                                <div style="float:left; width:100px;">
+                            	<img src="css/images/wanelo.png" style="float:left; margin:15px 0 0 20px;" />
+                                </div>
+                                <div style="float:left;color:#666; margin-top:10px; font-size:14px; width:300px;">
+                                	<label style="color:#1b7c0e;font-size:20px;font-weight:bold;">Wanelo plugin for Firefox</label>  <br />
+                                   Want , Need and Love is good.  Share, <br />
+									Buy  & Earn through Shopulses is better.<br />
+                                     <label style="color:#000; font-weight:600; font-size:12px; margin-left:110px; margin-bottom:-10px;">Coming soon for<br />&nbsp;&nbsp;&nbsp;other browsers</label>
+                                    <input type="button" id="userscripts2"  class="app_download" value="Download" style="float:left;margin-top:-10px" onclick="" />
+                                </div>   
+                            </div>
+                            <div class="download_option" style="height:110px;"> 
+                               <div style="float:left; width:100px;">
+                            	<img src="css/images/iphone.png" style="float:left; margin:15px 0 0 20px;" />
+                                </div>
+                                <div style="float:left;color:#666; margin-top:10px; font-size:18px; width:300px; font-weight:600">
+                                	<label style="color:#333333;font-size:20px;font-weight:bold;">Mobile Apps for<br />iPhone and Android</label>  <br />
+                                    Coming soon   
+                                </div>  
+                            </div>
+                        </div>
+                        <div id="waypoint_for_download"></div> <!--waypoint_div-->
+                    </div> 
+            </div><!--download End--> 
+            <div data-stellar-background-ratio="0" id="team"> <!--Team start-->
+             		<div id="team_content"> 
+                    	<div class="team_text">
+                        	<b>Shopulses</b> is founded by a team of technology<br>
+							entrepreneurs with a passion for creating new ways<br>
+							of engaging with products and services.
+                        </div>
+                        <div id="waypoint_for_team"></div> <!--waypoint_div-->
+                    </div> 
+            </div><!--Team End--> 
+            <div id="contact" data-slide="5" data-stellar-background-ratio="0"><!--contact start-->
+             		<div id="contact_content">
+                    	<div id="contact_text">
+                        	We would love<br />
+							to hear from you !!<br />
+                            <div class="contact_normal_text">
+                            	<b>Shopulses LLC </b><br />
+                                PO Box 360168, Milpitas, <br />
+                                CA 95036, United States<br />
+                                +1-866-300-4946 <br />
+                                 <a href="mailto:contact@shopulses.com">contact@shopulses.com</a><br /> 
+                            </div>
+                            <div id="icon" style="margin:0 0 20px 5px;">
+                            	<img src="css/images/twitter.png" style="cursor:pointer" id="twitter" />
+                                <img src="css/images/facebook.png" style="cursor:pointer" id="facebook"/>
+                                <img src="css/images/linked_in.png" style="cursor:pointer"  id="linked_in" />
+                            </div>                          
+                    	</div>
+                        <label id="faq1" class="a_link" style="margin-right:10px">FAQs</label>|<label id="terms" class="a_link" style="margin-left:10px">Terms of Use</label>|<label id="policy" class="a_link" style="margin-left:10px">Privacy Policy</label>
+                    </div>
+             </div><!--contact end-->
+        </div> <!--wrapper end-->
+ </body>
+</html> 
+<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>  
+<script type="text/javascript" src="popup/tinybox.js"></script>
+<script type="text/javascript" src="js/slider.js"></script> 
+<!--<script src="http://vjs.zencdn.net/c/video.js"></script>  -->
+<!--<script type="text/javascript" src="js/how_easySlider1.5.js"></script> -->
+<link rel="stylesheet" href="popup/style_popup.css" />
+<link media="all" type="text/css" href="css/tooltip.css" rel="stylesheet" />
+<link media="all" type="text/css" href="css/slider.min.css" rel="stylesheet" />
+<!--<link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800italic,800' rel='stylesheet' type='text/css' />  
